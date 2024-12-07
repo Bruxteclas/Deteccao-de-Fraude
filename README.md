@@ -12,8 +12,7 @@ Acesse o aplicativo diretamente via este link: [**Detecção de Fraudes**](https
 - [Descrição do Projeto](#descrição-do-projeto)
 - [Recursos do Projeto](#recursos-do-projeto)
 - [Tecnologias Utilizadas](#tecnologias-utilizadas)
-- [Como Executar o Projeto Localmente](#como-executar-o-projeto-localmente)
-- [Estrutura do Projeto](#estrutura-do-projeto)
+- [Significado das Pontuações do Modelo](#significado-das-pontuações-do-modelo)
 - [Como Contribuir](#como-contribuir)
 - [Licença](#licença)
 
@@ -63,6 +62,20 @@ O sistema utiliza o modelo **Isolation Forest** para identificar anomalias em tr
   - Matplotlib (para visualizações no notebook)
 - **Modelo de Machine Learning:**
   - Isolation Forest (para detecção de anomalias)
+---
+
+### **Significado das Pontuações do Modelo**
+As pontuações geradas pelo modelo **Isolation Forest** indicam a probabilidade de uma transação ser legítima ou fraudulenta, com base em padrões anômalos detectados nos dados. A interpretação é baseada nos seguintes valores:
+
+1. **✅ Pontuação do Modelo: 0.0315 (Exemplo de Não Fraudulenta)**:
+   - Pontuações positivas (acima de 0) indicam que a transação é classificada como **não fraudulenta**.
+   - O modelo considera que esta transação está dentro do comportamento normal dos dados analisados.
+
+2. **⚠️ Pontuação do Modelo: 0.0217 (Exemplo de Fraudulenta)**:
+   - Pontuações negativas ou próximas de zero (geralmente abaixo de um threshold definido) indicam que a transação é **potencialmente fraudulenta**.
+   - O modelo detecta anomalias significativas que podem ser sinais de fraude.
+
+**Nota**: O threshold para classificar uma transação como fraudulenta ou não pode ser ajustado conforme o caso de uso. No sistema atual, transações com pontuação **próxima ou inferior a zero** são consideradas suspeitas.
 
 ---
 
