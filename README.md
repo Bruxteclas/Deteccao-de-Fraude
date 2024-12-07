@@ -3,6 +3,8 @@
 
 Bem-vindo ao projeto **Sistema de Detecção de Fraudes**, um aplicativo interativo desenvolvido para identificar transações fraudulentas em tempo real usando técnicas avançadas de aprendizado de máquina. Este projeto utiliza o modelo **Isolation Forest**, uma abordagem não supervisionada para detectar anomalias em grandes conjuntos de dados.
 
+![image](https://github.com/user-attachments/assets/9c1a968e-b31c-4198-ae01-4f8e50c829b0)
+
 ### 🌐 **Acesse a Aplicação Web**
 Acesse o aplicativo diretamente via este link: [**Detecção de Fraudes**](https://deteccao-de-fraude-4neytyurzkkusx38a6dhcu.streamlit.app/)
 
