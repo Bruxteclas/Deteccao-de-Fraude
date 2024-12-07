@@ -225,7 +225,7 @@ def add_bg_from_local(image_file):
     )
 
 # Adicionando imagem de fundo
-add_bg_from_local("C:/Users/User/Documents/Projetos Práticos DS/Detecção de fraudes/imagem.jpg")
+add_bg_from_local("imagem.jpg")
 
 # Função para carregar o modelo treinado
 @st.cache_resource
